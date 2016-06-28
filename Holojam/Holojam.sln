@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{CDA6F725-905F-99A5-7AFD-3DCFCDB17D8F}") = "Holojam", "Assembly-CSharp.csproj", "{47E6DFD6-8460-E0C4-C2B3-2AC08C186D2E}"
+EndProject
+Project("{CDA6F725-905F-99A5-7AFD-3DCFCDB17D8F}") = "Holojam", "Assembly-CSharp-Editor.csproj", "{B555DDFF-8DDE-E160-6CC6-5C4DEDEC5947}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47E6DFD6-8460-E0C4-C2B3-2AC08C186D2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47E6DFD6-8460-E0C4-C2B3-2AC08C186D2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47E6DFD6-8460-E0C4-C2B3-2AC08C186D2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47E6DFD6-8460-E0C4-C2B3-2AC08C186D2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B555DDFF-8DDE-E160-6CC6-5C4DEDEC5947}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B555DDFF-8DDE-E160-6CC6-5C4DEDEC5947}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B555DDFF-8DDE-E160-6CC6-5C4DEDEC5947}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B555DDFF-8DDE-E160-6CC6-5C4DEDEC5947}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

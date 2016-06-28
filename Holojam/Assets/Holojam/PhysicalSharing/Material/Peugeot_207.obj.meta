@@ -1,0 +1,173 @@
+fileFormatVersion: 2
+guid: 1c323b5ab7a8e4efdb6a634a17d5795e
+timeCreated: 1467054299
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: bonnet_ok
+    100002: boot_ok
+    100004: Bump_front
+    100006: bump_rear_
+    100008: C_(1)
+    100010: door_lf_ok
+    100012: door_rf_ok
+    100014: extra
+    100016: F_(1)
+    100018: Frein
+    100020: GLass_(1)
+    100022: H_(1)
+    100024: M_(40)
+    100026: P_(9)
+    100028: //RootNode
+    100030: PF_4_(_Chr
+    100032: Wheel_(1)0
+    100034: Wheel_(1)0.Wheel_(1)1
+    100036: Wheel_(1)0.Wheel_(1)2
+    100038: Wheel_(1)0.Wheel_(1)3
+    100040: windscreen
+    400000: bonnet_ok
+    400002: boot_ok
+    400004: Bump_front
+    400006: bump_rear_
+    400008: C_(1)
+    400010: door_lf_ok
+    400012: door_rf_ok
+    400014: extra
+    400016: F_(1)
+    400018: Frein
+    400020: GLass_(1)
+    400022: H_(1)
+    400024: M_(40)
+    400026: P_(9)
+    400028: //RootNode
+    400030: PF_4_(_Chr
+    400032: Wheel_(1)0
+    400034: Wheel_(1)0.Wheel_(1)1
+    400036: Wheel_(1)0.Wheel_(1)2
+    400038: Wheel_(1)0.Wheel_(1)3
+    400040: windscreen
+    2300000: bonnet_ok
+    2300002: boot_ok
+    2300004: Bump_front
+    2300006: bump_rear_
+    2300008: C_(1)
+    2300010: door_lf_ok
+    2300012: door_rf_ok
+    2300014: extra
+    2300016: F_(1)
+    2300018: Frein
+    2300020: GLass_(1)
+    2300022: H_(1)
+    2300024: M_(40)
+    2300026: P_(9)
+    2300028: PF_4_(_Chr
+    2300030: Wheel_(1)0
+    2300032: Wheel_(1)0.Wheel_(1)1
+    2300034: Wheel_(1)0.Wheel_(1)2
+    2300036: Wheel_(1)0.Wheel_(1)3
+    2300038: windscreen
+    3300000: bonnet_ok
+    3300002: boot_ok
+    3300004: Bump_front
+    3300006: bump_rear_
+    3300008: C_(1)
+    3300010: door_lf_ok
+    3300012: door_rf_ok
+    3300014: extra
+    3300016: F_(1)
+    3300018: Frein
+    3300020: GLass_(1)
+    3300022: H_(1)
+    3300024: M_(40)
+    3300026: P_(9)
+    3300028: PF_4_(_Chr
+    3300030: Wheel_(1)0
+    3300032: Wheel_(1)0.Wheel_(1)1
+    3300034: Wheel_(1)0.Wheel_(1)2
+    3300036: Wheel_(1)0.Wheel_(1)3
+    3300038: windscreen
+    4300000: bonnet_ok
+    4300002: boot_ok
+    4300004: Bump_front
+    4300006: bump_rear_
+    4300008: C_(1)
+    4300010: door_lf_ok
+    4300012: door_rf_ok
+    4300014: extra
+    4300016: F_(1)
+    4300018: Frein
+    4300020: GLass_(1)
+    4300022: H_(1)
+    4300024: M_(40)
+    4300026: P_(9)
+    4300028: PF_4_(_Chr
+    4300030: Wheel_(1)0
+    4300032: Wheel_(1)0.Wheel_(1)1
+    4300034: Wheel_(1)0.Wheel_(1)2
+    4300036: Wheel_(1)0.Wheel_(1)3
+    4300038: windscreen
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

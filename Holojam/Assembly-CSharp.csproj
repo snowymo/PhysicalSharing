@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{47E6DFD6-8460-E0C4-C2B3-2AC08C186D2E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_2;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Holojam\Avatar\Scripts\HoloIKSystem.cs" />
+     <Compile Include="Assets\Holojam\Avatar\Scripts\IK\ArmIK.cs" />
+     <Compile Include="Assets\Holojam\Avatar\Scripts\IK\HipsIK.cs" />
+     <Compile Include="Assets\Holojam\Avatar\Scripts\IK\LegIK.cs" />
+     <Compile Include="Assets\Holojam\Avatar\Scripts\IK\TorsoIK.cs" />
+     <Compile Include="Assets\Holojam\Avatar\Scripts\SplineLimb.cs" />
+     <Compile Include="Assets\Holojam\Avatar\Scripts\StuttIKSystem.cs" />
+     <Compile Include="Assets\Holojam\Demo\Scripts\ExampleFloor.cs" />
+     <Compile Include="Assets\Holojam\Demo\Scripts\Laptop.cs" />
+     <Compile Include="Assets\Holojam\Demo\Scripts\RoomGenerator.cs" />
+     <Compile Include="Assets\Holojam\Environment\Room\makeRoom.cs" />
+     <Compile Include="Assets\Holojam\Input\GlobalReceiver.cs" />
+     <Compile Include="Assets\Holojam\Input\Hand\HandGlobalReceiver.cs" />
+     <Compile Include="Assets\Holojam\Input\Hand\HandModule.cs" />
+     <Compile Include="Assets\Holojam\Input\Hand\IHandHandler.cs" />
+     <Compile Include="Assets\Holojam\Input\Vive\IViveHandler.cs" />
+     <Compile Include="Assets\Holojam\Input\Vive\ViveControllerModule.cs" />
+     <Compile Include="Assets\Holojam\Input\Vive\ViveGlobalReceiver.cs" />
+     <Compile Include="Assets\Holojam\Input\WiiMote\IWiiMoteHandler.cs" />
+     <Compile Include="Assets\Holojam\Input\WiiMote\TestObjects\WiiMoteGlobalTestObject.cs" />
+     <Compile Include="Assets\Holojam\Input\WiiMote\TestObjects\WiiMotePointerTestObject.cs" />
+     <Compile Include="Assets\Holojam\Input\WiiMote\WiiGlobalReceiver.cs" />
+     <Compile Include="Assets\Holojam\Input\WiiMote\WiiMoteModule.cs" />
+     <Compile Include="Assets\Holojam\PhysicalSharing\Scripts\CarCtrl.cs" />
+     <Compile Include="Assets\Holojam\PhysicalSharing\Scripts\Match.cs" />
+     <Compile Include="Assets\Holojam\PhysicalSharing\Scripts\SerialCommunication.cs" />
+     <Compile Include="Assets\Holojam\PhysicalSharing\Scripts\TrackedCar.cs" />
+     <Compile Include="Assets\Holojam\System\CustomTrackedObject.cs" />
+     <Compile Include="Assets\Holojam\System\Deprecated\ObjectWithOffsetController.cs" />
+     <Compile Include="Assets\Holojam\System\Protocol\MasterStream.cs" />
+     <Compile Include="Assets\Holojam\System\Protocol\UpdateProtocol-Net.cs" />
+     <Compile Include="Assets\Holojam\System\Protocol\UpdateProtocolV3.cs" />
+     <Compile Include="Assets\Holojam\System\TrackedHeadset.cs" />
+     <Compile Include="Assets\Holojam\System\TrackedObject.cs" />
+     <Compile Include="Assets\Holojam\Tools\Actor.cs" />
+     <Compile Include="Assets\Holojam\Tools\ActorInstantiator.cs" />
+     <Compile Include="Assets\Holojam\Tools\ActorManager.cs" />
+     <Compile Include="Assets\Holojam\Tools\BoundsOffset.cs" />
+     <Compile Include="Assets\Holojam\Tools\Fence.cs" />
+     <Compile Include="Assets\Holojam\Tools\Holobounds.cs" />
+     <Compile Include="Assets\Holojam\Tools\Pairable.cs" />
+     <Compile Include="Assets\Holojam\Tools\PairableManager.cs" />
+     <Compile Include="Assets\Holojam\Tools\Stylus.cs" />
+     <Compile Include="Assets\Holojam\Utility\Billboard\Billboard.cs" />
+     <Compile Include="Assets\Holojam\Utility\Billboard\BillboardBox.cs" />
+     <Compile Include="Assets\Holojam\Utility\Billboard\BillboardComponent.cs" />
+     <Compile Include="Assets\Holojam\Utility\Billboard\BillboardGraph.cs" />
+     <Compile Include="Assets\Holojam\Utility\Billboard\BillboardLabel.cs" />
+     <Compile Include="Assets\Holojam\Utility\Lines\GizmoAtPivot.cs" />
+     <Compile Include="Assets\Holojam\Utility\Lines\LineFactory.cs" />
+     <Compile Include="Assets\Holojam\Utility\Lines\LineSynchronizer.cs" />
+     <Compile Include="Assets\Holojam\Utility\Lines\LineUnity.cs" />
+     <Compile Include="Assets\Holojam\Utility\Lines\WandController.cs" />
+     <Compile Include="Assets\Holojam\Utility\Lines\WiiCrayon.cs" />
+     <Compile Include="Assets\Holojam\Utility\Lines\makeLine.cs" />
+     <Compile Include="Assets\Holojam\Utility\OneModuleGrabbable.cs" />
+     <Compile Include="Assets\Holojam\Utility\PoseToColorChanger.cs" />
+     <Compile Include="Assets\Holojam\Utility\Singleton.cs" />
+     <Compile Include="Assets\Holojam\Utility\TransformUniversal.cs" />
+     <Compile Include="Assets\Holojam\Utility\TwoModuleScalable.cs" />
+     <Compile Include="Assets\Holojam\Utility\ViveTransformable.cs" />
+     <Compile Include="Assets\_Ignore\Config\Scripts\ConfigExecutor.cs" />
+     <None Include="Assets\Holojam\Avatar\Shaders\AvatarShader.shader" />
+     <None Include="Assets\Holojam\Demo\Shaders\CrayonShader.shader" />
+     <None Include="Assets\Holojam\Avatar\Shaders\UnlitColorTexture.shader" />
+     <None Include="Assets\_Ignore\LambertRimLit.shader" />
+     <None Include="Assets\Holojam\Demo\Shaders\AlphaBlendedColorHard.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="protobuf-net">
+ <HintPath>/Users/zhenyi/project/holojam-june272/Holojam/Holojam/Assets/Plugins/protobuf-net.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
