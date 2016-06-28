@@ -119,7 +119,7 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="protobuf-net">
- <HintPath>/Users/zhenyi/project/holojam-june272/Holojam/Holojam/Assets/Plugins/protobuf-net.dll</HintPath>
+ <HintPath>/Users/zhenyi/project/PhysicalSharing/Holojam/Assets/Plugins/protobuf-net.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

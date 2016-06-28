@@ -27,6 +27,8 @@ public class CarCtrl : MonoBehaviour {
 
 	bool testKey;
 
+	public int debugCount = 10;
+
 	// Use this for initialization
 	void Start () {
 
@@ -34,7 +36,7 @@ public class CarCtrl : MonoBehaviour {
 		lastRefRotation = lastRotation = Quaternion.identity;
 		serialCtrl = GameObject.Find ("RealCar").GetComponent<SerialCommunication> ();
 		serialCtrl.open ();
-		testKey = true;
+		testKey = false;
 		isLastRound = false;
 		step = 0;
 		count = 0;
@@ -63,11 +65,13 @@ public class CarCtrl : MonoBehaviour {
 		if(isReadyToMove){
 			// move according to invisible tracked objects
 			if(!lastRefPosition.Equals(new Vector3(0,0,0))){
+				// test rotation
+				drawRays();
 				// move as reference move
 				if (testKey) {
 					// do it every 10 frames
 					++count;
-					if (count != 10) {
+					if (count != debugCount) {
 						return;
 					}
 					count = 0;
@@ -124,20 +128,45 @@ public class CarCtrl : MonoBehaviour {
 		}
 	}
 
+	void drawRays(){
+		Quaternion facing = Quaternion.identity;
+		facing.SetFromToRotation (transform.rotation * Vector3.forward, referenceObj.transform.position - transform.position);
+		Vector3 vFacing = facing * Vector3.forward;
+		Vector3 vCur = transform.rotation * Vector3.forward;
+		// test if these two vectors are correct
+		Debug.DrawRay(this.transform.position,vCur,Color.green);
+		Debug.DrawRay(this.transform.position,referenceObj.transform.position-this.transform.position,Color.magenta);
+		//Debug.DrawRay(this.transform.position,vFacing,Color.red);
+		Debug.DrawRay(this.transform.position,facing * new Vector3(0,0,-1),Color.cyan);
+		print ("this:\t" + transform.position.ToString ("F2") + "ref:\t" + referenceObj.transform.position.ToString ("F2"));
+	}
+
 	//step 0: facing the destination
 	float lastAngle = 180;
 	bool turnRound(){
-		serialCtrl.median ();
+		//serialCtrl.median ();
 		if(isLastRound && (transform.position.Equals(lastPosition)))
 			return false;
 		else{
 			Quaternion facing = Quaternion.identity;
 			facing.SetFromToRotation (transform.position, referenceObj.transform.position);
+			Vector3 vFacing = facing * Vector3.forward;
+			Vector3 vCur = transform.rotation * Vector3.forward;
+			// test if these two vectors are correct
+			//Debug.DrawRay(this.transform.position,vCur,Color.green);
+			//Debug.DrawRay(this.transform.position,vFacing,Color.red);
+
 			float angle = Quaternion.Dot(transform.rotation, facing);
 			print ("turnRound:\tangle:\t" + angle);
 			if ((Mathf.Abs (Mathf.Abs (angle) - 1.0f) > 0.05f)) {
 				print ("rot in turn round:\t" + transform.rotation);
-				turnRobot (angle > lastAngle);
+				//turnRobot (angle > lastAngle);
+				Vector3 upVector = Vector3.Cross(vCur,vFacing);
+				print("turnRound:\tupVector:\t" + upVector.ToString("F2"));
+//				if (upVector.y > 0)
+//					serialCtrl.left ();
+//				else
+//					serialCtrl.right ();
 				lastAngle = angle;
 				isLastRound = true;
 				return false;

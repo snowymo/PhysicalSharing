@@ -709,12 +709,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trackedCar: {fileID: 1970979784}
   referenceCar: {fileID: 1955514422}
-  offset: {x: 0.09, y: 0.01, z: 0.18}
+  offset: {x: 0.23, y: 0.01, z: -0.15}
   car: {fileID: 1230673815}
   frame: {fileID: 487203909}
   disError: 0.02
   rotateError: 0.02
-  yError: 0.008
+  yError: 0.009
 --- !u!4 &970614665
 Transform:
   m_ObjectHideFlags: 0
@@ -952,15 +952,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400028, guid: 1c323b5ab7a8e4efdb6a634a17d5795e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.0001
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400028, guid: 1c323b5ab7a8e4efdb6a634a17d5795e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.0001
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400028, guid: 1c323b5ab7a8e4efdb6a634a17d5795e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.0001
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c323b5ab7a8e4efdb6a634a17d5795e, type: 3}
@@ -1424,15 +1424,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400028, guid: 1c323b5ab7a8e4efdb6a634a17d5795e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.0001
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400028, guid: 1c323b5ab7a8e4efdb6a634a17d5795e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.0001
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400028, guid: 1c323b5ab7a8e4efdb6a634a17d5795e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.0001
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c323b5ab7a8e4efdb6a634a17d5795e, type: 3}
@@ -1699,6 +1699,7 @@ MonoBehaviour:
   referenceObj: {fileID: 970614663}
   thescale: 1
   isReadyToMove: 0
+  debugCount: 1
 --- !u!114 &1970979788
 MonoBehaviour:
   m_ObjectHideFlags: 0
